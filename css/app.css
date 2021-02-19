@@ -1,10 +1,31 @@
 h1 {
-  font: Monaco, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 70px; }
+  font-size: 750%; }
 
 body {
   background-color: #212020; }
 
 p {
-  color: grey; }
+  color: grey;
+  margin-bottom: 0%;
+  margin-top: 0%; }
+
+.float-container {
+  border: 3px solid #fff; }
+
+.float-child {
+  width: 45%;
+  float: center;
+  padding: 20px;
+  border: 2px solid red; }
+
+#MainBox_Right {
+  border: 1px solid white; }
+
+#MainBox_Left_Content {
+  border: 1px solid white;
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  line-height: 200%; }
