@@ -1,0 +1,16 @@
+$background-color: #212020;
+$font-stack: Monaco, sans-serif;
+
+h1 {
+  font: $font-stack;
+  color: white;
+  font-size: 70px;
+}
+
+body{
+  background-color: $background-color;
+}
+
+p {
+  color: grey;
+}
