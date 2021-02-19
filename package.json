@@ -1,0 +1,22 @@
+{
+  "name": "fc",
+  "version": "1.0.0",
+  "description": "DU:RO Frontend Challange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sequeira8/Frontend_Challange.git"
+  },
+  "author": "Carlos Sequeira & Rui Nóbrega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sequeira8/Frontend_Challange/issues"
+  },
+  "homepage": "https://github.com/Sequeira8/Frontend_Challange#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
