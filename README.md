@@ -9,8 +9,7 @@ DU:RO - Frontend Challange
 - sass
 
 ### Run inside project folder:
-'''
+```
 npm install gulp gulp-sass -save-dev
-'''
-
-- It will install all dependencies and modules.
+```
+It will install all dependencies and modules.
