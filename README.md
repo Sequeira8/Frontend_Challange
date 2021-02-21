@@ -4,12 +4,25 @@ DU:RO - Frontend Challange
 ## Setup
 
 ### Install:
+- npm
 - Node.js
 - gulp
 - sass
 
 ### Run inside project folder:
 ```
-npm install gulp gulp-sass gulp-terser browser-sync --save-dev
+npm run execute
 ```
-It will install all dependencies and modules.
+Installs all dependencies and modules and opens browser with module.
+
+## Other npm scripts
+
+### Install dependencies and modules:
+```
+npm run install
+```
+
+### Run gulp:
+```
+npm run gulp
+```

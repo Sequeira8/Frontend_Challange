@@ -4,8 +4,9 @@
   "description": "DU:RO Frontend Challange",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "gulp watch"
+    "gulp": "gulp",
+    "install": "npm install gulp gulp-sass gulp-terser browser-sync --save-dev",
+    "execute": "npm run install && npm run gulp"
   },
   "repository": {
     "type": "git",
