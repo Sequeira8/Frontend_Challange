@@ -1,7 +1,8 @@
 $background-color: #212020;
-$font-stack: Arial, Helvetica, sans-serif;
+$font-stack: "Bahnschrift", sans-serif;
 
 @import './title';
+@import './menu';
 
 body{
   background-color: $background-color;
@@ -23,26 +24,4 @@ body{
     height: 99.5%;
     float: left;
     border: 2px solid red;
-
-}
-
-#description {
-  border: 1px solid green;
-  width: 75%;
-  height: 49.75%;
-  text-align: left;
-  float: right;
-  font-size: 105%;
-  line-height: 200%;
-  word-spacing: 120%;
-}
-
-p {
-  color: grey;
-  margin-bottom: 0%;
-  margin-top:0%;
-}
-
-#menu {
-  border: 1px solid green;
 }

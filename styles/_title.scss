@@ -1,18 +1,30 @@
 #title {
-    border: 1px solid green;
-    width: 75%;
-    height: 50%;
-    text-align: left;
-    float: right;
-    font-size: 105%;
+    padding-top: 12%;
+    padding-left: 29%;
+    padding-right: 10%;
 }
 
 header {
-    position: relative;
+    position:relative;
+    left: 0;
 }
 
 h1 {
     font-family: $font-stack;
     color: white;
-    font-size: 10vw;
+    font-size: 8vw;
+    margin-bottom: 5%;
+    text-align: left;
 }
+
+p {
+    font-weight: bold;
+    color: grey;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+    font-size: 0.8vw;
+    line-height: 220%;
+    word-spacing: 0.25em;
+    letter-spacing: 0.1em;
+  }
