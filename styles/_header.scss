@@ -1,6 +1,10 @@
 header {
-    font-family: $font-stack;
-    color: white;
-    font-size: 200%;
-    margin-top: 37%;
+    position: relative;
+  }
+
+  h1 {
+      position: absolute;
+      font-family: $font-stack;
+      color: white;
+      font-size: 10vw;
   }
