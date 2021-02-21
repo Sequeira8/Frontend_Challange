@@ -1,15 +1,49 @@
-//Create variables for gulp and sass
-var gulp = require('gulp')
-var sass = require('gulp-sass')
+const { src, dest, watch, series } = require('gulp');
+const sass = require('gulp-sass');
+const terser = require('gulp-terser');
+const browsersync = require('browser-sync').create();
 
-//Create the task to compile the scss into a css file
-gulp.task('sass', async function() {
-  gulp.src('styles/style.scss')
-  .pipe(sass().on('error', sass.logError))
-  .pipe(gulp.dest('styles'));
-});
 
-//Task to keep on watching the scss files. Modifications will automaically change the css file
-gulp.task('watch', function() {
-  gulp.watch('styles/*.scss', gulp.series('sass'));
-});
+// Sass Task
+function scssTask(){
+  return src('styles/style.scss', { sourcemaps: true })
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest('styles'));
+}
+
+// JavaScript Task
+function jsTask(){
+  return src('js/script.js', { sourcemaps: true })
+    .pipe(terser())
+    .pipe(dest('dist', { sourcemaps: '.' }));
+}
+
+function browsersyncServe(cb){
+  browsersync.init({
+    server: {
+      baseDir: '.'
+    }    
+  });
+  cb();
+}
+
+
+function browsersyncReload(cb){
+  browsersync.reload();
+  cb();
+}
+
+// Default Gulp Task
+exports.default = series(
+  scssTask,
+  jsTask,
+  browsersyncServe,
+  watchTask
+);
+
+// Watch Task
+function watchTask(){
+  watch('*.html', browsersyncReload);
+  watch(['styles/*.scss', 'js/*.js'], series(scssTask, jsTask, browsersyncReload));
+}
+
