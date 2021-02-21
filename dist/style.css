@@ -39,9 +39,16 @@ p {
   display: block;
   padding: 12px;
   text-decoration: none;
-  line-height: 150%; }
+  line-height: 150%;
+  text-align: left; }
   .menu a:hover {
     color: yellow; }
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #838383;
+  margin-left: 1.5%; }
 
 body {
   background-color: #212020;
