@@ -1,3 +1,20 @@
-#menu {
+.menu {
   border: 1px solid green;
+  width: 40vw;
+  padding-top: 12%;
+  padding-left: 1%;
+  padding-right: 10%;
+}
+
+.menu a {
+  font-size: 2vw;
+  font-family: $font-stack;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  &:hover{
+    color: yellow;
+  }
+  line-height: 150%;
 }
