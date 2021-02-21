@@ -9,14 +9,14 @@ var paths = {
 
 //Create the task to compile the scss into a css file
 gulp.task('sass', async function() {
-  gulp.src('scss/app.scss')
+  gulp.src('styles/style.scss')
   .pipe(sass({
     includePaths: ['scss']
   }))
-  .pipe(gulp.dest('css'));
+  .pipe(gulp.dest('styles'));
 });
 
 //Task to keeo on watching the scss files. Modifications will automaically change the css file
 gulp.task('watch', gulp.series('sass'), function() {
-  gulp.watch(["scss/*.scss","scss/base/*.scss","scss/sections/*.scss","scss/style/*.scss"],['sass']);
+  gulp.watch(["styles/*.scss","styles/base/*.scss","styles/sections/*.scss","styles/style/*.scss"],['sass']);
 });
