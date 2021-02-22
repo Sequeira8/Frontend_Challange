@@ -26,11 +26,16 @@ p {
   letter-spacing: 0.1em; }
 
 .menu {
-  border: 1px solid green;
   width: 40vw;
   padding-top: 12%;
   padding-left: 1%;
   padding-right: 10%; }
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #838383;
+  margin-left: 1.5%; }
 
 nav ul {
   list-style-type: none; }
@@ -48,14 +53,29 @@ nav ul li a {
 nav ul .feat-show.show {
   display: block; }
 
+nav ul .feat-show2.show {
+  display: block; }
+
+nav ul .feat-show3.show {
+  display: block; }
+
+nav ul .feat-show4.show {
+  display: block; }
+
+nav ul .feat-show5.show {
+  display: block; }
+
+nav ul .feat-show6.show {
+  display: block; }
+
+nav ul .feat-show7.show {
+  display: block; }
+
+nav ul .feat-show8.show {
+  display: block; }
+
 nav ul li a:hover {
   color: yellow; }
-
-hr {
-  display: block;
-  border: 0;
-  border-top: 1px solid #838383;
-  margin-left: 1.5%; }
 
 nav ul ul {
   display: none; }
@@ -100,10 +120,9 @@ nav ul ul .use_case {
 
 body {
   background-color: #212020;
-  height: 99.5%; }
+  height: 101%; }
 
 .viewport {
-  border: 3px solid #fff;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -112,8 +131,7 @@ body {
 
 .float-child {
   position: relative;
-  width: 49.75%;
-  height: 99.5%;
-  float: left;
-  border: 2px solid red; }
+  width: 50%;
+  height: 101%;
+  float: left; }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,15 @@
 .menu {
-  border: 1px solid green;
   width: 40vw;
   padding-top: 12%;
   padding-left: 1%;
   padding-right: 10%;
+}
+
+hr { 
+  display: block; 
+  border: 0; 
+  border-top: 1px solid #838383;  
+  margin-left: 1.5%;
 }
 
 nav ul {
@@ -26,26 +32,43 @@ nav ul .feat-show.show {
   display: block;
 }
 
+nav ul .feat-show2.show {
+  display: block;
+}
+
+nav ul .feat-show3.show {
+  display: block;
+}
+
+nav ul .feat-show4.show {
+  display: block;
+}
+
+nav ul .feat-show5.show {
+  display: block;
+}
+
+nav ul .feat-show6.show {
+  display: block;
+}
+
+nav ul .feat-show7.show {
+  display: block;
+}
+
+nav ul .feat-show8.show {
+  display: block;
+}
+
 nav ul li a:hover {
   
   color: yellow;
    
 }
 
-   
-
-
-hr { 
-  display: block; 
-  border: 0; 
-  border-top: 1px solid #838383;  
-  margin-left: 1.5%;
-}
-
 nav ul ul{
   display: none;
 }
-
 
 nav ul ul .text_button {
   font-weight: bold;
@@ -60,6 +83,7 @@ nav ul ul .text_button {
   word-spacing: 0.25em;
   letter-spacing: 0.1em;
 }
+
 nav ul ul .use_case {
   font-weight: bold;
   color: #00e7ff;

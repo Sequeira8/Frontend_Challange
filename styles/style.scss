@@ -6,11 +6,10 @@ $font-stack: "Bahnschrift", sans-serif;
 
 body{
   background-color: $background-color;
-  height:99.5%;
+  height:101%;
 }
 
 .viewport {
-    border: 3px solid #fff;
     position:absolute;
     top:0;
     bottom:0;
@@ -20,8 +19,7 @@ body{
 
 .float-child {
     position: relative;
-    width: 49.75%;
-    height: 99.5%;
+    width: 50%;
+    height: 101%;
     float: left;
-    border: 2px solid red;
 }
