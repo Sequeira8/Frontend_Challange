@@ -1,36 +1,17 @@
 var menu = [0, 0, 0, 0, 0, 0, 0, 0]
 
-$('.user_btn0').click(function(){
-  get_colors(0);
-});
+setup();
 
-$('.user_btn1').click(function(){
-  get_colors(1);
-});
-
-$('.user_btn2').click(function(){
-  get_colors(2);
-});
-
-$('.user_btn3').click(function(){
-  get_colors(3);
-});
-
-$('.user_btn4').click(function(){
-  get_colors(4);
-});
-
-$('.user_btn5').click(function(){
-  get_colors(5);
-});
-
-$('.user_btn6').click(function(){
-  get_colors(6);;
-});
-
-$('.user_btn7').click(function(){
-  get_colors(7);
-});
+function setup(){
+  var i;
+  for (i = 0; i < menu.length; i++) {
+    let x = i;
+    $('.user_btn'+i).click(function(){
+      get_colors(x);
+    });
+    hover_method_all_closed(i);
+  }
+}
 
 function get_colors(key) {
   var i;
@@ -51,19 +32,19 @@ function get_colors(key) {
 function swap_colors(key) {
   var i;
   for (i = 0; i < menu.length; i++) {
-    if (key != i) {
-      $('.user_btn'+i).css("color", "#838383");
-      var act = $('nav ul .feat-show'+i).hasClass("show");
+    let x = i;
+    if (key != x) {
+      $('.user_btn'+x).css("color", "#838383");
+      var act = $('nav ul .feat-show'+x).hasClass("show");
       if (act) {
-        $('nav ul .feat-show'+i).toggleClass("show");
+        $('nav ul .feat-show'+x).toggleClass("show");
         
       }
-      console.log("here")
-      $('.user_btn'+i).removeClass('hover');
-      $('.user_btn'+i).hover(function(){
-        $('.user_btn'+i).css("color", "yellow");
+      $('.user_btn'+x).removeClass('hover');
+      $('.user_btn'+x).hover(function(){
+        $('.user_btn'+x).css("color", "yellow");
         }, function(){
-          $('.user_btn'+i).css("color", "#838383");
+          $('.user_btn'+x).css("color", "#838383");
         }
       );
     }
@@ -76,19 +57,20 @@ function swap_colors(key) {
   const isAllZero = menu.every(item => item === 0);
   if (isAllZero) {
     for (i = 0; i < menu.length; i++) {
-      $('.user_btn'+i).css("color", "white");
-      hover_method_all_closed(i);
+      let x = i;
+      $('.user_btn'+x).css("color", "white");
+      hover_method_all_closed(x);
     }
   }
 
 }
 
 function hover_method_all_closed(key){
+  $('.user_btn'+key).removeClass('hover');
   $('.user_btn'+key).hover(function(){
     $(this).css("color", "yellow");
     var i;
     for (i = 0; i < menu.length; i++) {
-      $('.user_btn'+i).removeClass('hover')
       if(key != i) {
         $('.user_btn'+i).css("color", "#838383");
       }
