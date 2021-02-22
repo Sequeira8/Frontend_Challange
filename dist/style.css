@@ -50,7 +50,10 @@ nav ul li a {
   line-height: 150%;
   text-align: left; }
 
-nav ul .feat-show.show {
+nav ul .feat-show0.show {
+  display: block; }
+
+nav ul .feat-show1.show {
   display: block; }
 
 nav ul .feat-show2.show {
@@ -70,12 +73,6 @@ nav ul .feat-show6.show {
 
 nav ul .feat-show7.show {
   display: block; }
-
-nav ul .feat-show8.show {
-  display: block; }
-
-nav ul li a:hover {
-  color: yellow; }
 
 nav ul ul {
   display: none; }
