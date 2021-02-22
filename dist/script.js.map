@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"script.js"}
+{"version":3,"sources":["script.js"],"names":["$","click","toggleClass"],"mappings":"AAAAA,EAAE,aAAaC,OAAM,WACjBD,EAAE,qBAAqBE,YAAY","file":"script.js"}

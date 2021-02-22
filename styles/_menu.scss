@@ -6,23 +6,83 @@
   padding-right: 10%;
 }
 
-.menu a {
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
   font-size: 1.8vw;
   font-family: $font-stack;
   color: white;
   display: block;
   padding: 12px;
   text-decoration: none;
-  &:hover{
-    color: yellow;
-  }
+  
   line-height: 150%;
   text-align: left;
 }
+
+nav ul .feat-show.show {
+  display: block;
+}
+
+nav ul li a:hover {
+  
+  color: yellow;
+   
+}
+
+   
+
 
 hr { 
   display: block; 
   border: 0; 
   border-top: 1px solid #838383;  
   margin-left: 1.5%;
+}
+
+nav ul ul{
+  display: none;
+}
+
+
+nav ul ul .text_button {
+  font-weight: bold;
+  color: grey;
+  padding-left: 30%;
+  max-width: 45%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: left;
+  font-size: 0.6vw;
+  line-height: 220%;
+  word-spacing: 0.25em;
+  letter-spacing: 0.1em;
+}
+nav ul ul .use_case {
+  font-weight: bold;
+  color: #00e7ff;
+  padding-left: 30%;
+  max-width: 40%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: left;
+  font-size: 0.6vw;
+  line-height: 220%;
+  word-spacing: 0.25em;
+}
+
+.button {
+  background-color: $background-color;
+  border: 10%;
+  border-color: #00e7ff;
+  color: #00e7ff;
+  padding: 5% 30%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  margin: 4px 2px;
+  cursor: pointer;
 }
