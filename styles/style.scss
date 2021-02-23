@@ -25,6 +25,28 @@ body{
     display: inline-block;
 }
 
+#left_img {
+
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  width: 100px;
+  height: auto;
+  z-index: -1;
+    
+}
+
+#right_img {
+
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  width: 100px;
+  height: auto;
+  z-index: -1;
+    
+}
+
 //tablets
 @media only screen and (min-width:450px) and (max-width:1024px) //1024px for tablets and phones.
 {
@@ -34,6 +56,12 @@ body{
     height: 0%;
     float: none;
     padding-left: 20%;
+  }
+
+  #left_img, #right_img {
+
+    display: none;
+      
   }
 }
 
@@ -47,4 +75,11 @@ body{
     float: none;
     padding-left: 10%;
   }
+
+  #left_img, #right_img {
+
+    display: none;
+      
+  }
+  
 }

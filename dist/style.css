@@ -47,7 +47,7 @@ p {
     font-size: 3.3vw; } }
 
 .menu {
-  width: 40vw;
+  width: 60%;
   padding-top: 12%;
   padding-left: 1%;
   padding-right: 10%; }
@@ -208,13 +208,31 @@ body {
   float: left;
   display: inline-block; }
 
+#left_img {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  width: 100px;
+  height: auto;
+  z-index: -1; }
+
+#right_img {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  width: 100px;
+  height: auto;
+  z-index: -1; }
+
 @media only screen and (min-width: 450px) and (max-width: 1024px) {
   .float-child {
     position: relative;
     width: 70%;
     height: 0%;
     float: none;
-    padding-left: 20%; } }
+    padding-left: 20%; }
+  #left_img, #right_img {
+    display: none; } }
 
 @media only screen and (max-width: 449px) {
   .float-child {
@@ -222,5 +240,7 @@ body {
     width: 85%;
     height: 0%;
     float: none;
-    padding-left: 10%; } }
+    padding-left: 10%; }
+  #left_img, #right_img {
+    display: none; } }
 /*# sourceMappingURL=style.css.map */
