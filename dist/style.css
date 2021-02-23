@@ -10,7 +10,7 @@ header {
 h1 {
   font-family: "Bahnschrift", sans-serif;
   color: white;
-  font-size: 8vw;
+  font-size: 7.5vw;
   line-height: 120%;
   margin-bottom: 5%;
   text-align: left; }
@@ -21,7 +21,7 @@ p {
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: left;
-  font-size: 0.85vw;
+  font-size: 0.70vw;
   line-height: 220%;
   word-spacing: 0.25em;
   letter-spacing: 0.1em; }
@@ -48,7 +48,7 @@ p {
 
 .menu {
   width: 55%;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-left: 1%;
   padding-right: 10%; }
 
@@ -62,7 +62,7 @@ nav ul {
   padding-inline-start: 0; }
 
 nav ul li a {
-  font-size: 1.78vw;
+  font-size: 1.60vw;
   padding: 2.5% 0 2.5% 0;
   font-family: "Bahnschrift", sans-serif;
   color: white;
@@ -70,9 +70,6 @@ nav ul li a {
   text-decoration: none;
   line-height: 150%;
   text-align: left; }
-
-nav ul ul .use_case2 {
-  padding-bottom: 3%; }
 
 nav ul .feat-show0.show {
   display: block; }
@@ -136,6 +133,9 @@ nav ul ul .use_case, .use_case2 {
   line-height: 100%;
   word-spacing: 0.25em; }
 
+nav ul ul .use_case2 {
+  padding-bottom: 10%; }
+
 @media only screen and (min-width: 450px) and (max-width: 1024px) {
   .menu {
     width: 90%;
@@ -149,7 +149,7 @@ nav ul ul .use_case, .use_case2 {
     margin-left: 0%; }
   nav ul li a {
     padding: 2.5% 0 2.5% 0;
-    font-size: 4.1vw; }
+    font-size: 3.7vw; }
   nav ul ul .text_button {
     font-size: 1.6vw;
     padding-left: 16%;

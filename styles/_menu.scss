@@ -1,6 +1,6 @@
 .menu {
   width: 55%;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-left: 1%;
   padding-right: 10%;
 }
@@ -17,7 +17,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 1.78vw;
+  font-size: 1.60vw;
   padding: 2.5% 0 2.5% 0;
   font-family: $font-stack;
   color: white;
@@ -28,9 +28,7 @@ nav ul li a {
   text-align: left;
 }
 
-nav ul ul .use_case2{
-  padding-bottom: 3%;
-}
+
 
 
 nav ul .feat-show0.show {
@@ -106,6 +104,9 @@ nav ul ul .use_case, .use_case2 {
   line-height: 100%;  
   word-spacing: 0.25em;
 }
+nav ul ul .use_case2{
+  padding-bottom: 10%;
+}
 
 //tablets
 @media only screen and (min-width:450px) and (max-width:1024px) //1024px for tablets and phones.
@@ -126,7 +127,7 @@ nav ul ul .use_case, .use_case2 {
 
   nav ul li a {
     padding: 2.5% 0 2.5% 0;
-    font-size: 4.1vw;
+    font-size: 3.7vw;
   }
 
   nav ul ul .text_button {
@@ -144,6 +145,9 @@ nav ul ul .use_case, .use_case2 {
     font-size: 2vw;
     padding-left: 16%;
   }
+
+  
+  
 }
 
 //smartphones
@@ -186,4 +190,6 @@ nav ul ul .use_case, .use_case2 {
     font-size: 4vw;
     padding-left: 16%;
   }
+
+
 }
