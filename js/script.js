@@ -6,7 +6,8 @@ function setup(){
   var i;
   for (i = 0; i < menu.length; i++) {
     let x = i;
-    $('.user_btn'+i).click(function(){
+    $('.user_btn'+i).click(function(e){
+      e.preventDefault();
       get_colors(x);
     });
     hover_method_all_closed(i);
