@@ -13,6 +13,7 @@ h1 {
     font-family: $font-stack;
     color: white;
     font-size: 8vw;
+    line-height: 120%;
     margin-bottom: 5%;
     text-align: left;
 }
@@ -23,8 +24,44 @@ p {
     margin-top: 0%;
     margin-bottom: 0%;
     text-align: left;
-    font-size: 0.8vw;
+    font-size: 70%;
     line-height: 220%;
     word-spacing: 0.25em;
     letter-spacing: 0.1em;
   }
+
+//tablets
+@media only screen and (min-width:450px) and (max-width:1024px) //1024px for tablets and phones.
+{
+    #title {
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+
+    h1 {
+        font-size: 20vw;    
+    }
+
+    p {
+        font-size: 2.3vw;
+      }
+}
+
+//smartphones
+@media only screen and (max-width:449px) //449px for smartphones
+{ 
+    #title {
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+
+    h1 {
+        font-size: 25vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+      }
+}

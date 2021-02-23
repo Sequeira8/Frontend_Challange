@@ -11,6 +11,7 @@ h1 {
   font-family: "Bahnschrift", sans-serif;
   color: white;
   font-size: 8vw;
+  line-height: 120%;
   margin-bottom: 5%;
   text-align: left; }
 
@@ -20,10 +21,30 @@ p {
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: left;
-  font-size: 0.8vw;
+  font-size: 70%;
   line-height: 220%;
   word-spacing: 0.25em;
   letter-spacing: 0.1em; }
+
+@media only screen and (min-width: 450px) and (max-width: 1024px) {
+  #title {
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 10%; }
+  h1 {
+    font-size: 20vw; }
+  p {
+    font-size: 2.3vw; } }
+
+@media only screen and (max-width: 449px) {
+  #title {
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 10%; }
+  h1 {
+    font-size: 25vw; }
+  p {
+    font-size: 2.5vw; } }
 
 .menu {
   width: 40vw;
@@ -38,10 +59,11 @@ hr {
   margin-left: 1.5%; }
 
 nav ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-inline-start: 0; }
 
 nav ul li a {
-  font-size: 1.8vw;
+  font-size: 150%;
   font-family: "Bahnschrift", sans-serif;
   color: white;
   display: block;
@@ -115,6 +137,36 @@ nav ul ul .use_case {
   margin: 4px 2px;
   cursor: pointer; }
 
+@media only screen and (min-width: 450px) and (max-width: 1024px) {
+  .menu {
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-bottom: 10%; }
+  hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid #838383;
+    margin-left: 0%; }
+  nav ul li a {
+    padding: 0px;
+    font-size: 6.6vw; } }
+
+@media only screen and (max-width: 449px) {
+  .menu {
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-bottom: 10%; }
+  hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid #838383;
+    margin-left: 0%; }
+  nav ul li a {
+    padding: 0px;
+    font-size: 6.9vw; } }
+
 body {
   background-color: #212020;
   height: 101%; }
@@ -130,5 +182,22 @@ body {
   position: relative;
   width: 50%;
   height: 101%;
-  float: left; }
+  float: left;
+  display: inline-block; }
+
+@media only screen and (min-width: 450px) and (max-width: 1024px) {
+  .float-child {
+    position: relative;
+    width: 90%;
+    height: 0%;
+    float: none;
+    padding-left: 10%; } }
+
+@media only screen and (max-width: 449px) {
+  .float-child {
+    position: relative;
+    width: 95%;
+    height: 0%;
+    float: none;
+    padding-left: 8%; } }
 /*# sourceMappingURL=style.css.map */

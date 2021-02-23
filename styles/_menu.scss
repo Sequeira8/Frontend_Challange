@@ -14,10 +14,11 @@ hr {
 
 nav ul {
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 nav ul li a {
-  font-size: 1.8vw;
+  font-size: 150%;
   font-family: $font-stack;
   color: white;
   display: block;
@@ -103,4 +104,50 @@ nav ul ul .use_case {
   font-size: 1vw;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+//tablets
+@media only screen and (min-width:450px) and (max-width:1024px) //1024px for tablets and phones.
+{
+  .menu {
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-bottom: 10%;
+  }
+
+  hr { 
+    display: block; 
+    border: 0; 
+    border-top: 1px solid #838383;  
+    margin-left: 0%;
+  }
+
+  nav ul li a {
+    padding: 0px;
+    font-size: 6.6vw;
+  }
+}
+
+//smartphones
+@media only screen and (max-width:449px) //449px for smartphones
+{
+  .menu {
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-bottom: 10%;
+  }
+
+  hr { 
+    display: block; 
+    border: 0; 
+    border-top: 1px solid #838383;  
+    margin-left: 0%;
+  }
+
+  nav ul li a {
+    padding: 0px;
+    font-size: 6.9vw;
+  }
 }

@@ -22,4 +22,29 @@ body{
     width: 50%;
     height: 101%;
     float: left;
+    display: inline-block;
+}
+
+//tablets
+@media only screen and (min-width:450px) and (max-width:1024px) //1024px for tablets and phones.
+{
+  .float-child {
+    position: relative;
+    width: 90%;
+    height: 0%;
+    float: none;
+    padding-left: 10%;
+  }
+}
+
+//smartphones
+@media only screen and (max-width:449px) //449px for smartphones
+{
+  .float-child {
+    position: relative;
+    width: 95%;
+    height: 0%;
+    float: none;
+    padding-left: 8%;
+  }
 }
