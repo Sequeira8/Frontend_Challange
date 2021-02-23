@@ -41,12 +41,12 @@ function swap_colors(key) {
         
       }
       $('.user_btn'+x).removeClass('hover');
-      $('.user_btn'+x).hover(function(){
+      /*$('.user_btn'+x).hover(function(){
         $('.user_btn'+x).css("color", "yellow");
         }, function(){
           $('.user_btn'+x).css("color", "#838383");
         }
-      );
+      );*/
     }
 
     else {
