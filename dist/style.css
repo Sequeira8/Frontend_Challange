@@ -72,7 +72,7 @@ nav ul li a {
   line-height: 150%;
   text-align: left; }
 
-nav ul ul .text_button, .use_case2 {
+nav ul ul .use_case2 {
   padding-bottom: 3%; }
 
 nav ul .feat-show0.show {
@@ -116,7 +116,6 @@ nav ul ul {
   cursor: pointer; }
 
 nav ul ul .text_button {
-  font-weight: bold;
   color: grey;
   padding-left: 15%;
   max-width: 60%;
@@ -129,14 +128,13 @@ nav ul ul .text_button {
   letter-spacing: 0.1em; }
 
 nav ul ul .use_case, .use_case2 {
-  font-weight: bold;
   color: #00e7ff;
   padding-left: 15%;
   max-width: 40%;
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: left;
-  font-size: 0.6vw;
+  font-size: 0.8vw;
   line-height: 100%;
   word-spacing: 0.25em; }
 
@@ -161,7 +159,7 @@ nav ul ul .use_case, .use_case2 {
   .button {
     font-size: 2vw;
     margin: 10% 0 5% 0; }
-  nav ul ul .use_case {
+  nav ul ul .use_case, .use_case2 {
     font-size: 2vw;
     padding-left: 16%; } }
 
@@ -189,7 +187,7 @@ nav ul ul .use_case, .use_case2 {
     padding: 6% 38%;
     font-size: 4vw;
     margin: 10% 0 5% 0; }
-  nav ul ul .use_case {
+  nav ul ul .use_case, .use_case2 {
     font-size: 4vw;
     padding-left: 16%; } }
 
