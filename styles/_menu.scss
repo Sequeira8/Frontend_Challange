@@ -29,6 +29,11 @@ nav ul li a {
   text-align: left;
 }
 
+nav ul ul .text_button, .use_case2{
+  padding-bottom: 3%;
+}
+
+
 nav ul .feat-show0.show {
   display: block;
 }
@@ -82,7 +87,7 @@ nav ul ul{
 nav ul ul .text_button {
   font-weight: bold;
   color: grey;
-  padding-left: 30%;
+  padding-left: 15%;
   max-width: 60%;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -93,10 +98,10 @@ nav ul ul .text_button {
   letter-spacing: 0.1em;
 }
 
-nav ul ul .use_case {
+nav ul ul .use_case, .use_case2 {
   font-weight: bold;
   color: #00e7ff;
-  padding-left: 30%;
+  padding-left: 15%;
   max-width: 40%;
   margin-top: 0%;
   margin-bottom: 0%;
