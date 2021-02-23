@@ -1,6 +1,6 @@
 .menu {
-  width: 60%;
-  padding-top: 12%;
+  width: 55%;
+  padding-top: 5%;
   padding-left: 1%;
   padding-right: 10%;
 }
@@ -9,7 +9,6 @@ hr {
   display: block; 
   border: 0; 
   border-top: 1px solid #838383;  
-  margin-left: 1.5%;
 }
 
 nav ul {
@@ -18,11 +17,11 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 150%;
+  font-size: 1.78vw;
+  padding: 2.5% 0 2.5% 0;
   font-family: $font-stack;
   color: white;
   display: block;
-  padding: 12px;
   text-decoration: none;
   
   line-height: 150%;
