@@ -40,8 +40,8 @@ function swap_colors(key) {
         $('nav ul .feat-show'+x).toggleClass("show");
         
       }
-      $('.user_btn'+x).removeClass('hover');
-      /*$('.user_btn'+x).hover(function(){
+      /*$('.user_btn'+x).removeClass('hover');
+      $('.user_btn'+x).hover(function(){
         $('.user_btn'+x).css("color", "yellow");
         }, function(){
           $('.user_btn'+x).css("color", "#838383");
